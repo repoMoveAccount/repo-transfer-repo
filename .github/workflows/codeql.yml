@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v1
       with:
         submodules: recursive # omit this if your repository doesn't use submodules
-    - uses: Anthophila/codeql-action/codeql/init@master
+    - uses: github/codeql-action/init@v1
       with:
         languages: javascript # comma separated list of values from {go, python, javascript, java, cpp, csharp} (not YET ruby, sorry!)
-    - uses: Anthophila/codeql-action/codeql/finish@master
+    - uses: github/codeql-action/analyze@v1
